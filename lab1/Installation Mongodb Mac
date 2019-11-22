@@ -1,0 +1,9 @@
+#Installation de Brew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#Installation de mongodb
+brew tap mongodb/brew\
+brew install mongodb-community@4.0
+#Lancement du service
+brew services start mongodb-community@4.0
+#Installation de pymongo
+pip install pymongo
